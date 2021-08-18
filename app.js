@@ -51,8 +51,9 @@ app.use('/api/user',userRouter);
 app.use('/api/post',postRouter);
 app.use('/api/category',categoryRouter);
 
+let port = process.env.PORT || 5000
 
 //listening port/start the app
-app.listen(process.env.PORT,()=>{
-    console.log(`app listening on port ${process.env.PORT}`)
+app.listen(port,()=>{
+    console.log(`app listening on port ${port}`)
 });
