@@ -20,7 +20,7 @@ async function registerNewUser(req, res, next) {
         newUser = new User({
             username:req.body.username,
             email:req.body.email,
-            avatar:req.files[0].filename,
+            avatar:`${process.env.BASE_URL}avatars/${req.files[0].filename}`,
             password:hashedPassword
         });
     }else {

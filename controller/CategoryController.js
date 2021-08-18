@@ -14,7 +14,7 @@ async function addNewCategory(req, res, next) {
     if (req.files && req.files.length > 0){
         newCategory = new Category({
             title:req.body.title,
-            thumbnail:req.files[0].filename
+            thumbnail:`${process.env.BASE_URL}categories/${req.files[0].filename}`,
         });
     }else {
         newCategory = new Category({
