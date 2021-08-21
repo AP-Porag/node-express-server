@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "nodemone app.js"
+    "test": "nodemon app.js"
   },
   "author": "ap.porag",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "bcrypt": "^5.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "googleapis": "^84.0.0",
     "mongoose": "^5.13.5",
     "multer": "^1.4.2"
   }
